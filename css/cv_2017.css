@@ -78,11 +78,13 @@ a {
 .recap {
   padding-top: 5%;
   text-align: center;
-  font-size: 20px; }
+  font-size: 30px;
+  font-family: "Amatic SC", cursive; }
 
 .liste {
   background-color: #E6EDDE;
   margin: 20px;
+  margin-top: 0px;
   border-radius: 20px;
   opacity: 0.6; }
 
@@ -120,7 +122,8 @@ a {
     height: 75px; } }
 @media screen and (max-width: 767px) {
   .recap {
-    color: white; } }
+    color: white;
+    font-size: 25px; } }
 @media screen and (max-width: 767px) {
   .liste {
     width: 200px;
