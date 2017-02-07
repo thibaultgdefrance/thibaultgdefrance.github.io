@@ -110,6 +110,9 @@ a {
   display: none; }
 
 @media screen and (max-width: 767px) {
+  body {
+    overflow: auto; } }
+@media screen and (max-width: 767px) {
   .bouton {
     opacity: 1;
     background-color: #5682D9;
