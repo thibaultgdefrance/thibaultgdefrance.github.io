@@ -112,6 +112,9 @@ a {
 .footer {
   display: none; }
 
+.blanc {
+  height: 500px; }
+
 @media screen and (max-width: 767px) {
   body {
     overflow: auto; } }
@@ -175,6 +178,9 @@ a {
     font-size: 30px; } }
 @media screen and (max-width: 767px) {
   #info {
-    font-size: 25px; } }
+    font-size: 25px; }
+
+  .blanc {
+    display: none; } }
 
 /*# sourceMappingURL=cv_2017.css.map */
