@@ -1,8 +1,15 @@
-body
+html,body
     overflow: hidden
+    height: 100%
 
 a
     color: white
+
+a:hover
+    color: white
+    background-color: grey
+    font-weight: bold
+    text-shadow: 1px 1px cyan
 
 .bouton
     height: 40px
@@ -13,10 +20,22 @@ a
     text-align: center
     background-color: black
     opacity: 0.8
+    overflow: auto
 
 .bouton:hover
-    background-color: white
-    color: #0134C0
+    background-color: #000000
+    color: white
+    animation-name: increase
+    animation-duration: 0.2s
+    animation-fill-mode: both
+    border-bottom-right-radius: 50%
+    border-bottom-left-radius: 50%
+
+@keyframes increase
+    0%
+        height: 40px
+    100%
+        height: 200px
 
 .background
     background-image: url("../media/stardust.png")
@@ -37,19 +56,25 @@ a
     position: absolute
 
 .deroulant
+    max-width: 100%
     position:relative
     height: 700px
 
 #competences
-    background-image: url("../media/resize_flout_ecran_pc.JPG")
-    height: 1000px
-    -webkit-background-size: cover
-    -moz-background-size: cover
-    -o-background-size: cover
+    padding: 5%
+    padding-top: 0px
+    margin-top: 20%
+    height: 100%
     background-size: cover
     position: relative
     background-attachment: fixed
 
+.competence
+    border: 1px solid black
+    border-radius: 10px
+    margin-top: 20%
+    padding: 2%
+    padding-bottom: 5%
 .icon
     height: 40px
     width: 250px
@@ -70,7 +95,7 @@ a
 
 .parcours
     background-image: url("../media/resize_vide.JPG")
-    height: 998px
+    min-height: 100%
     -webkit-background-size: cover
     -moz-background-size: cover
     -o-background-size: cover
@@ -82,7 +107,7 @@ a
     height: 100px
 
 .mySlides
-    width: 100%
+    max-width: 100%
 
 
 .w3-content
@@ -104,16 +129,13 @@ a
     text-shadow: 4px 4px 2px black
 
 .liste
-    background-color: #E6EDDE
-    margin: 20px
-    margin-top: 0px
-    border-radius: 5px
-    opacity: 0.6
-    box-shadow: 4px 4px 4px black
+
+
+
 
 .passion
     background-image: url("")
-    height: 998px
+    height: 600px
     font-size: 30px
     font-family: 'Amatic SC', cursive
     font-size: 35px
@@ -135,88 +157,95 @@ a
     display: none
 
 .blanc
-    height: 500px
+    height: 1000px
 
 
 @media screen and (max-width: 767px)
     body
-        overflow: auto
+        overflow: hidden
 
-@media screen and (max-width: 767px)
+    #accueil
+        overflow: scroll
+
     .bouton
         opacity: 1
         background-color: #5682D9
         color: white
         height: 75px
+    .bouton:hover
+        animation: none
+        background-color: inherit
+        border-radius: 0px
 
-@media screen and(max-width: 767px)
     .recap
         color: white
         font-size: 25px
 
-@media screen and (max-width: 767px)
+
     .liste
         width: 200px
         font-size: 20px
 
 
-@media screen and (max-width: 767px)
+
     .logo
         width: 30px
         height: 30px
 
-@media screen and (max-width: 767px)
+
     .navbar-fixed-top
         position: relative
 
-@media screen and (max-width: 767px)
+
     .deroulant
         display: none
 
-@media screen and (max-width: 767px)
+
     #competences
         position: relative
-        background-image: url("../media/stardust.png")
+        background-color: #ff970f
+        overflow: scroll
+        border-radius: 0px
 
-@media screen and (pxmax-width: 767px)
+
     a
         color: white
 
-@media screen and (max-width: 767px)
+
     .titre
         font-size: 20px
         padding-top: 10px
 
-@media screen and (max-width: 767px)
+
     .footer
         display: block
+        text-align: center
 
-@media screen and (max-width: 767px)
     .info
         margin-top: 100px
 
-@media screen and (max-width: 767px)
+
     .liste
-        background-image: url("../media/stardust.png")
         margin: 0px
 
-@media screen and (max-width: 767px)
+
     .passion
         font-size: 25px
         background-image: url("../media/stardust.png")
         color: white
 
-@media screen and (max-width: 767px)
+
     .icon
         text-align: left
         font-size: 15px
         margin: 15px
 
-@media screen and (max-width: 767px)
+
     #parcours
         font-size: 30px
+        overflow: scroll
 
-@media screen and (max-width: 767px)
+
     #info
         font-size: 25px
     .blanc
