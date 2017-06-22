@@ -152,18 +152,24 @@ a:hover {
 .blanc {
   height: 1000px; }
 
-@media screen and (max-width: 767px) {
-  body {
-    overflow: hidden; }
+#info {
+  display: none; }
 
+@media screen and (max-width: 767px) {
+  height: 100%;
+    height-overflow: hidden;
   #accueil {
     overflow: scroll; }
+
+  .menu {
+    height: 100%; }
 
   .bouton {
     opacity: 1;
     background-color: #5682D9;
     color: white;
-    height: 75px; }
+    height: 55px;
+    margin-right: 10%; }
 
   .bouton:hover {
     animation: none;
@@ -226,9 +232,13 @@ a:hover {
     overflow: scroll; }
 
   #info {
-    font-size: 25px; }
+    font-size: 25px;
+    display: block; }
 
   .blanc {
+    display: none; }
+
+  #bouton-accueil {
     display: none; } }
 
 /*# sourceMappingURL=cv_2017.css.map */
