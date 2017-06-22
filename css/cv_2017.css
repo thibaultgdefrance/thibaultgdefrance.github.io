@@ -150,7 +150,7 @@ a:hover {
   display: none; }
 
 .blanc {
-  height: 1000px; }
+  height: 2000px; }
 
 #info {
   display: none; }
@@ -169,7 +169,8 @@ a:hover {
     background-color: #5682D9;
     color: white;
     height: 55px;
-    margin-right: 10%; }
+    margin-right: 10%;
+    margin-top: 5%; }
 
   .bouton:hover {
     animation: none;
@@ -234,9 +235,6 @@ a:hover {
   #info {
     font-size: 25px;
     display: block; }
-
-  .blanc {
-    display: none; }
 
   #bouton-accueil {
     display: none; } }
