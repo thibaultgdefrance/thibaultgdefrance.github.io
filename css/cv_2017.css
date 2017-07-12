@@ -11,6 +11,42 @@ a:hover {
   font-weight: bold;
   text-shadow: 1px 1px cyan; }
 
+.raillures {
+  position: absolute;
+  height: 20px;
+  width: 100%;
+  bottom: 20%;
+  opacity: 0.5; }
+
+.couleur1 {
+  background-color: #f2da07;
+  height: 50%;
+  width: 100%; }
+
+.couleur2 {
+  background-color: #f45d01;
+  height: 50%;
+  width: 100%;
+  bottom: 0px; }
+
+.couleur3 {
+  background-color: #f2da07;
+  height: 50%;
+  width: 100%; }
+
+.couleur4 {
+  background-color: #f45d01;
+  height: 20%;
+  width: 100%;
+  left: 50%; }
+
+.raillures2 {
+  position: absolute;
+  right: 14%;
+  width: 100px;
+  height: 20%;
+  opacity: 0.5; }
+
 .bouton {
   height: 40px;
   color: white;
@@ -37,20 +73,13 @@ a:hover {
   100% {
     height: 200px; } }
 .background {
-  background-image: url("../media/stardust.png");
-  opacity: 0.8;
-  height: 80px;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  position: relative;
-  background-attachment: fixed; }
+  background-color: white;
+  height: 30px; }
 
 .titre {
   font-family: "Amatic SC", cursive;
   font-size: 30px;
-  color: white;
+  color: #a288e3;
   padding-top: 40px;
   position: absolute; }
 
@@ -65,11 +94,9 @@ a:hover {
   height: 100%;
   background-size: cover;
   position: relative;
-  background-attachment: fixed; }
+  background-color: #c0e6de; }
 
 .competence {
-  border: 1px solid black;
-  border-radius: 10px;
   margin-top: 20%;
   padding: 2%;
   padding-bottom: 5%; }
@@ -93,14 +120,10 @@ a:hover {
   height: 30px; }
 
 .parcours {
-  background-image: url("../media/resize_vide.JPG");
-  min-height: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-color: #bb999c;
+  height: 100%;
   position: relative;
-  background-attachment: fixed; }
+  margin-top: 10%; }
 
 .taf {
   height: 100px; }
@@ -127,16 +150,16 @@ a:hover {
   text-shadow: 4px 4px 2px black; }
 
 .passion {
-  background-image: url("");
-  height: 600px;
+  height: 100%;
   font-size: 30px;
   font-family: "Amatic SC", cursive;
-  font-size: 35px; }
+  font-size: 35px;
+  background-color: #c2efb3; }
 
 #parcours {
   font-family: "Amatic SC", cursive;
   font-size: 35px;
-  padding-top: 5%; }
+  background-color: #bb999c; }
 
 #interets {
   padding-top: 100px; }
@@ -159,7 +182,8 @@ a:hover {
   height: 100%;
     height-overflow: hidden;
   #accueil {
-    overflow: scroll; }
+    overflow: scroll;
+    height: 100%; }
 
   .menu {
     height: 100%; }
@@ -197,7 +221,6 @@ a:hover {
 
   #competences {
     position: relative;
-    background-color: #ff970f;
     overflow: scroll;
     border-radius: 0px; }
 
@@ -219,9 +242,7 @@ a:hover {
     margin: 0px; }
 
   .passion {
-    font-size: 25px;
-    background-image: url("../media/stardust.png");
-    color: white; }
+    font-size: 25px; }
 
   .icon {
     text-align: left;
@@ -230,7 +251,8 @@ a:hover {
 
   #parcours {
     font-size: 30px;
-    overflow: scroll; }
+    overflow: scroll;
+    height: 100%; }
 
   #info {
     font-size: 25px;
