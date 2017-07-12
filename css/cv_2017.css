@@ -180,14 +180,33 @@ a:hover {
   display: none; }
 
 @media screen and (max-width: 767px) {
-  height: 100%;
-    height-overflow: hidden;
+  html, body {
+    height: 100%;
+    overflow: hidden; }
+
+  .raillures {
+    bottom: 10%; }
+
+  .raillures2 {
+    position: absolute;
+    width: 255%;
+    transform: rotatez(90deg);
+    bottom: 50%;
+    right: -30%; }
+
+  .titre {
+    position: fixed;
+    top: 0px;
+    font-size: 60px;
+    left: 20%; }
+
   #accueil {
     overflow: scroll;
     height: 100%; }
 
   .menu {
-    height: 100%; }
+    height: 100%;
+    top: 5%; }
 
   .bouton {
     opacity: 1;
@@ -251,7 +270,7 @@ a:hover {
     margin: 15px; }
 
   #parcours {
-    font-size: 30px;
+    font-size: 25px;
     overflow: scroll;
     height: 100%; }
 
