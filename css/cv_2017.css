@@ -1,35 +1,45 @@
 html, body {
-  overflow: hidden;
-  height: 100%; }
+    height: 100%;
+    font-family: 'Cinzel', serif;
+}
 
 a {
   color: white; }
 
 a:hover {
-  color: white;
-  background-color: grey;
-  font-weight: bold;
-  text-shadow: 1px 1px cyan; }
-
+    color: white;
+    background-color: grey;
+    font-weight: bold;
+}
 .bouton {
-  height: 40px;
-  color: white;
-  border: 1px solid white;
-  font-family: "Amatic SC", cursive;
-  font-size: 30px;
-  text-align: center;
-  background-color: black;
-  opacity: 0.8;
-  overflow: auto; }
+    height: 40px;
+    color: white;
+    border: 1px solid white;
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+    text-align: center;
+    background-color: black;
+    opacity: 0.8;
+    overflow: hidden;
+}
+.bouton:before {
+  
+    top: 0;
+    left: -10px;
+    right: -10px;
+    bottom: 0;
+    z-index: -1;
+    transform: skewX(-15deg);
+
+}
 
 .bouton:hover {
-  background-color: #000000;
-  color: white;
-  animation-name: increase;
-  animation-duration: 0.2s;
-  animation-fill-mode: both;
-  border-bottom-right-radius: 50%;
-  border-bottom-left-radius: 50%; }
+    background-color: #000000;
+    color: white;
+    animation-name: increase;
+    animation-duration: 0.2s;
+    animation-fill-mode: both;
+    }
 
 @keyframes increase {
   0% {
@@ -41,30 +51,35 @@ a:hover {
   height: 30px; }
 
 .titre {
-  font-family: "Amatic SC", cursive;
-  font-size: 50px;
-  color: #f2da07;
-  top: 10%;
-  left: 1%;
-  position: absolute;
-  text-shadow: 1px 1px #f45d01; }
+    font-family: 'Cinzel', serif;
+    font-weight:bolder;
+    font-size: 30px;
+    top: 15%;
+    left: 1%;
+    position: relative;
+}
 
 .deroulant {
   max-width: 100%;
   height: 700px; }
 
 #competences {
-  padding: 5%;
-  padding-top: 0px;
-  margin-top: 20%;
-  height: 100%;
-  background-size: cover;
-  background-color: #91f5ad; }
-
+    padding: 5%;
+    padding-top: 0px;
+    margin-top: 20%;
+    height: 100%;
+    background-size: cover;
+    font-family: 'Cinzel', serif;
+}
+.liste {
+    
+}
 .competence {
   margin-top: 20%;
   padding: 2%;
-  padding-bottom: 5%; }
+  padding-bottom: 5%;
+  border:solid black 1px;
+}
 
 .icon {
   height: 40px;
@@ -85,15 +100,17 @@ a:hover {
   height: 30px; }
 
 #parcours {
-  font-family: "Amatic SC", cursive;
+
   font-size: 35px;
-  background-color: #bb999c;
+  
   height: 100%; }
 
 .parcours {
-  height: 100%;
-  position: relative;
-  margin-top: 10%; }
+    height: 100%;
+    position: relative;
+    margin-top: 10%;
+    
+}
 
 .taf {
   height: 100px; }
@@ -105,24 +122,25 @@ a:hover {
   height: 500px; }
 
 .info {
-  font-size: 30px;
-  font-family: "Amatic SC", cursive;
-  font-size: 35px; }
+    font-size: 30px;
+    border: solid black 1px;
+    font-size: 35px;
+}
 
 .recap {
   padding-top: 5%;
   text-align: center;
   font-size: 30px;
-  font-family: "Amatic SC", cursive;
+
   color: white;
   text-shadow: 4px 4px 2px black; }
 
 .passion {
   height: 100%;
   font-size: 30px;
-  font-family: "Amatic SC", cursive;
+
   font-size: 35px;
-  background-color: #c2efb3; }
+ }
 
 #interets {
   padding-top: 100px; }
@@ -144,17 +162,9 @@ a:hover {
 @media screen and (max-width: 767px) {
   html, body {
     height: 100%;
-    overflow: hidden; }
+    overflow:scroll; }
 
-  .raillures {
-    bottom: 10%; }
-
-  .raillures2 {
-    position: absolute;
-    width: 255%;
-    transform: rotatez(90deg);
-    bottom: 50%;
-    right: -30%; }
+   
 
   .titre {
     position: fixed;
@@ -171,12 +181,8 @@ a:hover {
     top: 5%; }
 
   .bouton {
-    opacity: 1;
-    background-color: #5682D9;
-    color: white;
-    height: 55px;
-    margin-right: 10%;
-    margin-top: 5%; }
+   
+    display:none;    }
 
   .bouton:hover {
     animation: none;
